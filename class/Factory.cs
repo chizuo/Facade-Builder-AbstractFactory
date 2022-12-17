@@ -94,6 +94,7 @@ namespace DesignPattern
             worker4.installSmartOSModule();
             worker4.installSpeakerModule();
             worker4.installVolumeModule();
+            worker4.installPowerModule();
             return worker4.FinalizeProduct();
         }
 
@@ -105,6 +106,7 @@ namespace DesignPattern
             worker5.installSmartOSModule();
             worker5.installSpeakerModule();
             worker5.installVolumeModule();
+            worker5.installPowerModule();
             return worker5.FinalizeProduct();
         }
 
@@ -116,6 +118,7 @@ namespace DesignPattern
             worker6.installSmartOSModule();
             worker6.installSpeakerModule();
             worker6.installVolumeModule();
+            worker6.installPowerModule();
             return worker6.FinalizeProduct();
         }
 
@@ -127,6 +130,7 @@ namespace DesignPattern
             worker7.installSmartOSModule();
             worker7.installSpeakerModule();
             worker7.installVolumeModule();
+            worker7.installPowerModule();
             return worker7.FinalizeProduct();
         }
     }
