@@ -1,0 +1,64 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>70</x><y>10</y><w>260</w><h>270</h></coordinates><panel_attributes>Factory
+--
+-worker1: ISamsungTVBuilder
+-worker2: ISamsungTVBuilder
+-worker3: ISamsungTVBuilder
+-worker4: ISamsungTVBuilder
+-worker5: ISamsungTVBuilder
+-worker6: ISamsungTVBuilder
+-worker7: ISamsungTVBuilder
+--
++order(model: string): ISamsungTelevision
++buildModel1(): ISamsungTelevision
++buildModel2(): ISamsungTelevision
++buildModel3(): ISamsungTelevision
++buildModel4(): ISamsungTelevision
++buildModel5(): ISamsungTelevision
++buildModel6(): ISamsungTelevision
++buildModel7(): ISamsungTelevision</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>30</y><w>240</w><h>190</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+ISamsungTvBuilder
+--
++NewTV()
++installScreenModule()
++installChannelModule()
++installVolumeModule()
++installPowerModule()
++installSmartOSModule()
++installSpeakerModule()
++FinalizeProduct(): ISamsungTelevision
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>110</y><w>130</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-&gt;</panel_attributes><additional_attributes>10;10;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>300</y><w>200</w><h>60</h></coordinates><panel_attributes>UN43Builder
+--
+-television: ISamsungTelevision
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>370</y><w>200</w><h>60</h></coordinates><panel_attributes>UN50Builder
+--
+-television: ISamsungTelevision
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>440</y><w>200</w><h>60</h></coordinates><panel_attributes>UN55Builder
+--
+-television: ISamsungTelevision
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>510</y><w>200</w><h>60</h></coordinates><panel_attributes>UN58Builder
+--
+-television: ISamsungTelevision
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>300</y><w>200</w><h>60</h></coordinates><panel_attributes>UN65Builder
+--
+-television: ISamsungTelevision
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>370</y><w>200</w><h>60</h></coordinates><panel_attributes>UN70Builder
+--
+-television: ISamsungTelevision
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>440</y><w>200</w><h>60</h></coordinates><panel_attributes>UN75Builder
+--
+-television: ISamsungTelevision
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>440</y><w>100</w><h>60</h></coordinates><panel_attributes>
+UN75</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>370</y><w>100</w><h>60</h></coordinates><panel_attributes>
+UN70</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>760</x><y>300</y><w>100</w><h>60</h></coordinates><panel_attributes>
+UN65</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>510</y><w>100</w><h>60</h></coordinates><panel_attributes>
+UN58</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>440</y><w>100</w><h>60</h></coordinates><panel_attributes>
+UN55</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>370</y><w>100</w><h>60</h></coordinates><panel_attributes>
+UN50</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>300</y><w>100</w><h>60</h></coordinates><panel_attributes>
+UN43</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>210</y><w>70</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>50;10;50;120;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>210</y><w>80</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;60;190;10;190</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>210</y><w>90</w><h>280</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>70;10;70;260;10;260</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>210</y><w>100</w><h>350</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;80;330;10;330</additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>210</y><w>80</w><h>280</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;260;60;260</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>210</y><w>70</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;190;50;190</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>210</y><w>60</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;120;40;120</additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>310</y><w>70</w><h>40</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;20;50;20</additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>380</y><w>70</w><h>40</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;20;50;20</additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>450</y><w>70</w><h>40</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>10;20;50;20</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>520</y><w>70</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;20;50;20</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>450</y><w>70</w><h>40</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>50;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>380</y><w>70</w><h>40</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>50;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>310</y><w>70</w><h>40</h></coordinates><panel_attributes>lt=.&gt;
+</panel_attributes><additional_attributes>50;20;10;20</additional_attributes></element></diagram>

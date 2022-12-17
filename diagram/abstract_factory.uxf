@@ -1,0 +1,76 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes
+--
+</help_text><element><id>UMLClass</id><coordinates><x>60</x><y>200</y><w>260</w><h>170</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+ISamsungTvFactory
+--
++order(model: string): ISamsungTelevision
++buildModel1(): ISamsungTelevision
++buildModel2(): ISamsungTelevision
++buildModel3(): ISamsungTelevision
++buildModel4(): ISamsungTelevision
++buildModel5(): ISamsungTelevision
++buildModel6(): ISamsungTelevision
++buildModel7(): ISamsungTelevision</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>80</y><w>100</w><h>60</h></coordinates><panel_attributes>
+Client</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>410</y><w>260</w><h>270</h></coordinates><panel_attributes>Factory
+--
+-worker1: ISamsungTVBuilder
+-worker2: ISamsungTVBuilder
+-worker3: ISamsungTVBuilder
+-worker4: ISamsungTVBuilder
+-worker5: ISamsungTVBuilder
+-worker6: ISamsungTVBuilder
+-worker7: ISamsungTVBuilder
+--
++order(model: string): ISamsungTelevision
++buildModel1(): ISamsungTelevision
++buildModel2(): ISamsungTelevision
++buildModel3(): ISamsungTelevision
++buildModel4(): ISamsungTelevision
++buildModel5(): ISamsungTelevision
++buildModel6(): ISamsungTelevision
++buildModel7(): ISamsungTelevision</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>480</y><w>100</w><h>60</h></coordinates><panel_attributes>
+UN55</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>340</y><w>100</w><h>60</h></coordinates><panel_attributes>
+UN65</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>410</y><w>100</w><h>60</h></coordinates><panel_attributes>
+UN58</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>550</y><w>100</w><h>60</h></coordinates><panel_attributes>
+UN50</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>620</y><w>100</w><h>60</h></coordinates><panel_attributes>
+UN43</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>270</y><w>100</w><h>60</h></coordinates><panel_attributes>
+UN70</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>200</y><w>100</w><h>60</h></coordinates><panel_attributes>
+UN75</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>360</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>640</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;..
+m1=create</panel_attributes><additional_attributes>210;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>580</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;..
+m1=create</panel_attributes><additional_attributes>210;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>500</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;..
+m1=create</panel_attributes><additional_attributes>210;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>430</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;..
+m1=create</panel_attributes><additional_attributes>210;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>360</y><w>230</w><h>90</h></coordinates><panel_attributes>lt=&lt;..
+m1=create</panel_attributes><additional_attributes>210;10;110;10;110;70;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>290</y><w>230</w><h>150</h></coordinates><panel_attributes>lt=&lt;..
+m1=create</panel_attributes><additional_attributes>210;10;100;10;100;130;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>220</y><w>230</w><h>210</h></coordinates><panel_attributes>lt=&lt;..
+m1=create</panel_attributes><additional_attributes>210;10;90;10;90;190;10;190</additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>50</y><w>240</w><h>250</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+ISamsungTelevision
+--
++ChannelSystem: IChannelModule
++VolumeSystem: IVolumeModule
++AudioSystem: ISpeakerModule
++SmartSystem: ISmartOSModule
++PowerSystem: IPowerModule
++Screen: IScreenModule
+--
++commandProcessor(command: string)
++channel(number: int)
++channel(command: string)
++power()
++menu()
++settings()
++screen(content: string)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>100</y><w>460</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>440;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>670</x><y>350</y><w>240</w><h>250</h></coordinates><panel_attributes>Facade
+--
++ChannelSystem: IChannelModule
++VolumeSystem: IVolumeModule
++AudioSystem: ISpeakerModule
++SmartSystem: ISmartOSModule
++PowerSystem: IPowerModule
++Screen: IScreenModule
+--
++commandProcessor(command: string)
++channel(number: int)
++channel(command: string)
++power()
++menu()
++settings()
++screen(content: string)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>290</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>220</y><w>80</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>60;130;40;130;40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>290</y><w>80</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>60;80;30;80;30;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>380</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>430</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>500</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>570</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>590</y><w>190</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>170;10;170;60;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>130</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element></diagram>

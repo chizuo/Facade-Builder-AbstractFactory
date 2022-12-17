@@ -1,0 +1,66 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>460</x><y>350</y><w>240</w><h>250</h></coordinates><panel_attributes>Facade
+--
++ChannelSystem: IChannelModule
++VolumeSystem: IVolumeModule
++AudioSystem: ISpeakerModule
++SmartSystem: ISmartOSModule
++PowerSystem: IPowerModule
++Screen: IScreenModule
+--
++commandProcessor(command: string)
++channel(number: int)
++channel(command: string)
++power()
++menu()
++settings()
++screen(content: string)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>60</y><w>240</w><h>250</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+ISamsungTelevision
+--
++ChannelSystem: IChannelModule
++VolumeSystem: IVolumeModule
++AudioSystem: ISpeakerModule
++SmartSystem: ISmartOSModule
++PowerSystem: IPowerModule
++Screen: IScreenModule
+--
++commandProcessor(command: string)
++channel(number: int)
++channel(command: string)
++power()
++menu()
++settings()
++screen(content: string)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>300</y><w>150</w><h>110</h></coordinates><panel_attributes>ChannelModule
+--
+-channel: int
+-min: int
+-max: int
+-index: int
+-source: List&lt;string&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>530</y><w>150</w><h>70</h></coordinates><panel_attributes>PowerModule
+--
+-state: boolean
+--
++power(): string
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>300</y><w>140</w><h>110</h></coordinates><panel_attributes>VolumeModule
+--
+-volume: int
+-min: int
+-max: int
+-state: boolean
+--
++mute()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>430</y><w>140</w><h>80</h></coordinates><panel_attributes>SmartModule
+--
+-os: string
+--
++menu()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>530</y><w>140</w><h>70</h></coordinates><panel_attributes>SpeakerModule
+--
+-audio: List&lt;string&gt;
+-selection: int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>430</y><w>150</w><h>80</h></coordinates><panel_attributes>ScreenModule
+--
+-size: int
+-model: string
+--
++display(content: string)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>370</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>370</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>460</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>550</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>550</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>460</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>300</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element></diagram>
